@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+
+    <div class="quiz mt-5" id="quiz">
+        <section class="head"><p>Quiz</p></section>
+        <span class="intr"><p>Here are some General Knowledge Question by attempting you can check your GK.</p>
+        </span>
+        <!-- <button><a onclick="startQuiz()" href="quest.html">Start Quiz</a></button> -->
+
+        <button onclick="startQuiz()">Start Quiz</button>
+     </div>
+
+    <div class="mainBody" id="mainBody">
+        <div class="quizBody">
+            <div class="header">
+                <h3>QUIZ</h3>
+            </div>
+            <div class="questionSec">
+                <p id="question">Dummy question?</p>
+            </div>
+            <div class="options">
+                <li class="quesOptions">option1</li>
+                <li class="quesOptions">option2</li>
+                <li class="quesOptions">option3</li>
+                <li class="quesOptions">option4</li>
+                
+            </div>
+            <div class="footer">
+                <h3 id="quesNo">1/10</h3>
+                <button onclick="nextQues()" id="nextBtn">Next</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="result" id="resultBox">
+        <div class="resultBox">
+            <div>
+                <p>RESULT</p>
+            </div>
+    
+            <div>
+                <span>NAME</span>
+                <span>Saqib</span>
+            </div>
+    
+            
+            <div>
+                <span>TotaL QUES</span>
+                <span id="totalQues"></span>
+            </div>
+            
+            <div>
+                <span>CORRECT</span>
+                <span id="correctAns"></span>
+            </div>
+            
+            <div>
+                <span>WRONG</span>
+                <span id="wrongQues"></span>
+            </div>
+    
+        </div>
+    </div>
+    
+</body>
+
+<script src="app.js"></script>
+<script src="./bootstrap-4.6.1-dist/js/jquery-3.5.1.slim.min.js"></script>
+<script src="./bootstrap-4.6.1-dist/js/popper.min.js"></script>
+<script src="./bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+</html>
